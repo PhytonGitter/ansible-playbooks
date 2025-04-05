@@ -1,0 +1,8 @@
+---
+  - name: windows all updates
+    hosts: windowsServer
+    tasks:
+      - name: windows updates
+        ansible.windows.win_updates:
+          category_names: '*'
+          reboot: true
