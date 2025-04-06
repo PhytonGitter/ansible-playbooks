@@ -1,0 +1,8 @@
+---
+- hosts: linux_ubuntu
+  become: true
+  tasks:
+    - name: Uninstall apache2
+      ansible.builtin.package:
+        name: apache2
+        state: absent
