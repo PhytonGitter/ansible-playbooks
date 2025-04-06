@@ -1,5 +1,5 @@
 ---
-- hosts: linux_ubuntu
+- hosts: dev_linux
   become: true
   tasks:
     - name: Uninstall apache2
